@@ -1,6 +1,6 @@
 console.log('Ejecutando pruebas de TaskNote...');
 const fs = require('fs');
-if (!fs.existsSync('./index.html')) {
+if (!fs.existsSync('./indesadsadasx.html')) {
  console.error('FALLO: index.html no encontrado');
  process.exit(1);
 }
