@@ -6,5 +6,3 @@ if (!fs.existsSync('./index.html')) {
 }
 console.log('Todas las pruebas pasaron');
 
-console.log('Ejecutando pruebas...');
-process.exit(1); // Fuerza el fallo
