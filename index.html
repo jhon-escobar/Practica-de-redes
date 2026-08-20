@@ -1,19 +1,338 @@
 <!DOCTYPE html>
 <html lang="es">
-Guía Docente — Solo para uso del profesor
-Guía Resuelta CI/CD · Página 2 de 9
 
 <head>
-    <meta charset="UTF-8">
-    <title>TaskNote</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jhon Escobar — Técnico Superior en Sistemas</title>
+    <meta name="description"
+        content="Portafolio de Jhon Escobar, Técnico Superior en Sistemas — desarrollo web y redes, Sucre, Bolivia." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <h1>TaskNote</h1>
-    <input id="taskInput" placeholder="Nueva tarea...">
-    <button id="addBtn">Agregar</button>
-    <ul id="taskList"></ul>
+
+    <div class="grain"></div>
+
+    <header class="nav" id="nav">
+        <a href="#top" class="nav__mark">JE<span>_</span></a>
+        <nav class="nav__links">
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#experiencia">Experiencia</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto" class="nav__cta">Contacto</a>
+        </nav>
+        <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero" id="top">
+            <svg class="hero__net" id="heroNet" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice"
+                aria-hidden="true">
+                <!-- links -->
+                <g class="net-links" stroke="currentColor" stroke-width="1">
+                    <line x1="180" y1="160" x2="430" y2="110" />
+                    <line x1="430" y1="110" x2="690" y2="180" />
+                    <line x1="690" y1="180" x2="960" y2="120" />
+                    <line x1="180" y1="160" x2="260" y2="380" />
+                    <line x1="430" y1="110" x2="480" y2="360" />
+                    <line x1="690" y1="180" x2="640" y2="400" />
+                    <line x1="960" y1="120" x2="900" y2="360" />
+                    <line x1="260" y1="380" x2="480" y2="360" />
+                    <line x1="480" y1="360" x2="640" y2="400" />
+                    <line x1="640" y1="400" x2="900" y2="360" />
+                    <line x1="260" y1="380" x2="200" y2="600" />
+                    <line x1="480" y1="360" x2="440" y2="620" />
+                    <line x1="640" y1="400" x2="700" y2="640" />
+                    <line x1="900" y1="360" x2="960" y2="610" />
+                    <line x1="440" y1="620" x2="700" y2="640" />
+                </g>
+                <g class="net-nodes">
+                    <circle cx="180" cy="160" r="4" />
+                    <circle cx="430" cy="110" r="4" />
+                    <circle cx="690" cy="180" r="4" />
+                    <circle cx="960" cy="120" r="4" />
+                    <circle cx="260" cy="380" r="4" />
+                    <circle cx="480" cy="360" r="4" />
+                    <circle cx="640" cy="400" r="4" />
+                    <circle cx="900" cy="360" r="4" />
+                    <circle cx="200" cy="600" r="4" />
+                    <circle cx="440" cy="620" r="4" />
+                    <circle cx="700" cy="640" r="4" />
+                    <circle cx="960" cy="610" r="4" />
+                </g>
+            </svg>
+
+            <div class="hero__content">
+                <p class="eyebrow">Sucre, Bolivia — disponible para proyectos</p>
+                <h1 class="hero__title">Jhon Escobar</h1>
+                <p class="hero__role">Técnico Superior en Sistemas</p>
+                <p class="hero__desc">
+                    Construyo software y armo la infraestructura de red donde corre.
+                    Backend en Django y Node.js, interfaces en React, y detrás de todo,
+                    pipelines de VLANs, subnetting y CI/CD que hacen que las cosas
+                    no se caigan.
+                </p>
+                <div class="hero__actions">
+                    <a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
+                    <a href="#contacto" class="btn btn--ghost">Contactarme</a>
+                </div>
+            </div>
+
+            <a href="#sobre-mi" class="scroll-cue" aria-label="Bajar a la siguiente sección">
+                <span></span>
+            </a>
+        </section>
+
+        <!-- SOBRE MÍ -->
+        <section class="section" id="sobre-mi">
+            <div class="section__head">
+                <p class="tag">01 · Sobre mí</p>
+                <h2>De la capa de red a la interfaz</h2>
+            </div>
+            <div class="about">
+                <p>
+                    Estudio en el Tecnológico Boliviano Alemán, en Sucre, donde curso
+                    materias que van desde diseño y programación web hasta redes y
+                    arquitectura de sistemas. Esa mezcla no es casualidad: me interesa
+                    entender el stack completo, desde cómo viaja un paquete por una
+                    VLAN hasta cómo se renderiza un componente en el navegador.
+                </p>
+                <p>
+                    Trabajo tanto en proyectos académicos como con clientes reales.
+                    Actualmente desarrollo el sitio de comercio electrónico de
+                    <strong>ALUMIN NOVA</strong>, una empresa de perfiles de aluminio,
+                    donde diseñé el esquema de base de datos, construí la app en
+                    Django y estoy integrando pasarelas de pago bolivianas. En paralelo,
+                    practico despliegue continuo con GitHub Actions y arme laboratorios
+                    de redes empresariales completos en Cisco Packet Tracer.
+                </p>
+                <p>
+                    Lo que más disfruto es el momento en el que algo que estaba roto
+                    empieza a funcionar — ya sea un pipeline que por fin pasa en verde
+                    o una VLAN que por fin enruta como debe.
+                </p>
+            </div>
+        </section>
+
+        <!-- EXPERIENCIA -->
+        <section class="section section--alt" id="experiencia">
+            <div class="section__head">
+                <p class="tag">02 · Experiencia</p>
+                <h2>Lo que he construido</h2>
+            </div>
+            <ol class="timeline">
+                <li class="timeline__item">
+                    <div class="timeline__date">2025 — actualidad</div>
+                    <div class="timeline__body">
+                        <h3>Desarrollador Django — ALUMIN NOVA</h3>
+                        <p>
+                            Sitio de comercio electrónico para una empresa de perfiles de
+                            aluminio. Diseño del esquema PostgreSQL (roles, variantes de
+                            producto, inventario, documentos de venta), backend en Django,
+                            e investigación e integración de pasarelas de pago locales
+                            (Libélula/BNB, PagosNet).
+                        </p>
+                    </div>
+                </li>
+                <li class="timeline__item">
+                    <div class="timeline__date">2025</div>
+                    <div class="timeline__body">
+                        <h3>GymBot — Proyecto de equipo</h3>
+                        <p>
+                            App de gestión de gimnasios con microservicios en Node.js y
+                            Express, Firebase Firestore como base de datos, APIs REST y
+                            GraphQL, y pipeline de CI/CD con GitHub Actions.
+                        </p>
+                    </div>
+                </li>
+                <li class="timeline__item">
+                    <div class="timeline__date">2025</div>
+                    <div class="timeline__body">
+                        <h3>QA Tester — EduFuture</h3>
+                        <p>
+                            Diseño de casos de prueba (Happy Path / Unhappy Path) para
+                            registro de usuarios, inscripción a cursos y exámenes,
+                            documentados en Jira y QMetry Test Management.
+                        </p>
+                    </div>
+                </li>
+                <li class="timeline__item">
+                    <div class="timeline__date">2024 — 2025</div>
+                    <div class="timeline__body">
+                        <h3>Laboratorios de redes empresariales</h3>
+                        <p>
+                            Diseño e implementación en Cisco Packet Tracer de una red
+                            empresarial completa: subnetting con VLSM, enrutamiento
+                            inter-VLAN mediante switch multicapa 3560, DHCP relay e
+                            infraestructura inalámbrica con WLC y APs.
+                        </p>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <!-- HABILIDADES -->
+        <section class="section" id="habilidades">
+            <div class="section__head">
+                <p class="tag">03 · Habilidades</p>
+                <h2>Herramientas del oficio</h2>
+            </div>
+            <div class="skills">
+                <div class="skills__group">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Django&nbsp;/&nbsp;DRF</li>
+                        <li>Node.js&nbsp;/&nbsp;Express</li>
+                        <li>PostgreSQL</li>
+                        <li>Autenticación JWT</li>
+                    </ul>
+                </div>
+                <div class="skills__group">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>React&nbsp;/&nbsp;TypeScript</li>
+                        <li>Tailwind CSS</li>
+                        <li>HTML&nbsp;/&nbsp;CSS&nbsp;/&nbsp;JS</li>
+                        <li>Vite</li>
+                    </ul>
+                </div>
+                <div class="skills__group">
+                    <h3>DevOps &amp; CI/CD</h3>
+                    <ul>
+                        <li>GitHub Actions</li>
+                        <li>Git</li>
+                        <li>Firebase Hosting</li>
+                        <li>Despliegue automatizado</li>
+                    </ul>
+                </div>
+                <div class="skills__group">
+                    <h3>Redes</h3>
+                    <ul>
+                        <li>Cisco Packet Tracer</li>
+                        <li>VLAN&nbsp;/&nbsp;VLSM</li>
+                        <li>Modelo OSI</li>
+                        <li>DHCP&nbsp;/&nbsp;DNS</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROYECTOS -->
+        <section class="section section--alt" id="proyectos">
+            <div class="section__head">
+                <p class="tag">04 · Proyectos</p>
+                <h2>Trabajo reciente</h2>
+            </div>
+            <div class="projects">
+
+                <article class="project">
+                    <div class="project__index">A</div>
+                    <div class="project__body">
+                        <h3>Tienda de videojuegos — clase_django</h3>
+                        <p>
+                            E-commerce en Django con carrito y checkout transaccional,
+                            dashboard administrativo con gráficos en Chart.js, generación
+                            de reportes en PDF con ReportLab, y búsqueda avanzada con
+                            Django Q objects.
+                        </p>
+                        <div class="project__tags">
+                            <span>Django</span><span>PostgreSQL</span><span>Chart.js</span><span>ReportLab</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <div class="project__index">B</div>
+                    <div class="project__body">
+                        <h3>ALUMINNOVAWEB</h3>
+                        <p>
+                            Sitio de comercio electrónico para ALUMIN NOVA. Catálogo de
+                            perfiles de aluminio, panel administrativo y modelo de datos
+                            diseñado desde cero para variantes de producto e inventario.
+                        </p>
+                        <div class="project__tags">
+                            <span>Django</span><span>REST Framework</span><span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <div class="project__index">C</div>
+                    <div class="project__body">
+                        <h3>TaskNote — Pipeline CI/CD</h3>
+                        <p>
+                            Lista de tareas simple usada como caso práctico para construir
+                            un pipeline completo de integración y despliegue continuo con
+                            GitHub Actions: pruebas automáticas, build y despliegue a
+                            GitHub Pages.
+                        </p>
+                        <div class="project__tags">
+                            <span>GitHub Actions</span><span>Node.js</span><span>CI/CD</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <div class="project__index">D</div>
+                    <div class="project__body">
+                        <h3>Calculadora</h3>
+                        <p>
+                            Aplicación de calculadora construida con React, TypeScript y
+                            Tailwind sobre Vite, con manejo cuidadoso de tipados estrictos
+                            y estilos utilitarios.
+                        </p>
+                        <div class="project__tags">
+                            <span>React</span><span>TypeScript</span><span>Tailwind</span><span>Vite</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section class="section contact" id="contacto">
+            <div class="section__head">
+                <p class="tag">05 · Contacto</p>
+                <h2>Hablemos de tu proyecto</h2>
+            </div>
+            <p class="contact__lede">
+                Abierto a proyectos freelance, prácticas y colaboraciones.
+                Respondo rápido — escríbeme por cualquiera de estos medios.
+            </p>
+            <div class="contact__links">
+                <a href="mailto:tu-correo@ejemplo.com" class="contact__link">
+                    <span class="contact__label">Correo</span>
+                    <span class="contact__value">tu-correo@ejemplo.com</span>
+                </a>
+                <a href="https://github.com/jhon-escobar" target="_blank" rel="noopener" class="contact__link">
+                    <span class="contact__label">GitHub</span>
+                    <span class="contact__value">github.com/jhon-escobar</span>
+                </a>
+                <a href="#" class="contact__link">
+                    <span class="contact__label">LinkedIn</span>
+                    <span class="contact__value">Agrega tu enlace aquí</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>Jhon Escobar · Sucre, Bolivia · <span id="year"></span></p>
+    </footer>
+
     <script src="app.js"></script>
 </body>
 
